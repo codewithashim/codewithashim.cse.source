@@ -1,0 +1,101 @@
+@import "../../style/color";
+@import "../../style/variable";
+
+.contact_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact_container {
+  width: 60%;
+  display: grid;
+  grid-template-columns: 40% 50%;
+  gap: 12%;
+
+  .contact_opction {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .contact_opction_data {
+      background: $bg-color-veriant;
+      padding: 1.2rem;
+      border-radius: 1.5rem;
+      text-align: center;
+      border: 1px solid transparent;
+      transition: $transition;
+
+      &:hover {
+        background: transparent;
+        border-color: $primary-color-veriant;
+      }
+      .contact_icon {
+        font-size: 2rem;
+      }
+
+      a {
+        display: inline-block;
+        margin-top: 0.6rem !important;
+      }
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+
+    input {
+      padding: 1rem;
+      outline: none;
+      background: transparent;
+      border-radius: 0.5rem;
+      border: 2px solid $primary-color-veriant;
+      color: $color-light;
+    }
+    textarea {
+      outline: none;
+      padding: 1.2rem;
+      resize: none;
+      background: transparent;
+      border-radius: 0.5rem;
+      border: 2px solid $primary-color-veriant;
+    }
+  }
+}
+
+
+
+/*
+========================================================
+    Mrdia query medium device
+========================================================
+*/
+
+@media screen and(max-width: 1024px) {
+    .contact_container{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+/*========================================================
+            Mrdia query small device
+========================================================*/
+
+@media screen and(max-width:600px) {
+    .contact_container{
+width: $container-width-sm;
+    }
+}
+
+@media screen and(max-width:700px) {
+}
+
+@media screen and(max-width: 400px) {
+}

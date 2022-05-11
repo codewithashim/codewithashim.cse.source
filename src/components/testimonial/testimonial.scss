@@ -1,0 +1,84 @@
+@import "../../style/color";
+@import "../../style/variable";
+
+.services_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.testimonial_container {
+  width: 40%;
+
+  .testimonial {
+      background: $bg-color-veriant;
+      padding: 2rem;
+      text-align: center;
+      border-radius: 2rem;
+      user-select: none;
+      margin: 0.6rem auto;
+      width: 60%;
+
+    .clint_profile {
+      width: 6rem;
+      aspect-ratio: 1/1;
+      overflow: hidden;
+      border-radius: 50%;
+      margin: 0 auto 1rem;
+      border: 0.4rem solid $primary-color-veriant;
+      padding: 0.6rem;
+
+      img{
+          width: 100%;
+          padding: 0.5rem;
+      }
+    }
+    .clinte_revew_areia{
+        color: $color-light;
+        font-weight: 300;
+        display: block;
+        width: 80%;
+        margin: 0.8rem auto 0;
+    }
+  }
+}
+
+/*
+========================================================
+    Mrdia query medium device
+========================================================
+*/
+
+@media screen and(max-width: 1024px) {
+    .testimonial_container{
+        width: 60%;
+    }
+}
+
+/*========================================================
+            Mrdia query small device
+========================================================*/
+
+@media screen and(max-width:600px) {
+    .testimonial_container{
+        aspect-ratio: 1/1;
+        // display: grid;
+        // justify-content: center !important;
+        // align-items: center !important;
+        // width: 0rem !important;
+        width: $container-width-sm !important;
+        // width: 100% !important;
+
+        .clinte_revew_areia{
+            // width: 100% !important;
+            width: $container-width-sm !important;
+        }
+    }
+}
+
+@media screen and(max-width:700px) {
+}
+
+@media screen and(max-width: 400px) {
+}

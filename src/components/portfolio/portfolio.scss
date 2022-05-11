@@ -1,0 +1,90 @@
+@import "../../style/color";
+@import "../../style/variable";
+
+.portfolio_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.portfolio_content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+
+  .portfolio_titem {
+    background: $bg-color-veriant;
+    padding: 1.6rem 1rem;
+    border: 1px solid $primary-color;
+    border-radius: 1.2rem;
+    transition: $transition;
+
+    &:hover {
+      border-color: $primary-color-veriant;
+      background: transparent;
+    }
+
+    .portfolio_item_imeage {
+      width: 100%;
+      height: auto;
+      padding: 0.5rem;
+    }
+
+    .live_btn {
+      padding: 0.6rem;
+      display: flex;
+      gap: 1.5rem;
+
+      a {
+        text-align: center;
+      }
+
+      .git_btn {
+        text-align: center;
+        margin-right: 0.3rem;
+      }
+    }
+  }
+}
+
+/*
+========================================================
+    Mrdia query medium device
+========================================================
+*/
+
+@media screen and(max-width: 1024px) {
+  .portfolio_content {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 1.2rem;
+  }
+}
+
+/*========================================================
+            Mrdia query small device
+========================================================*/
+
+@media screen and(max-width:600px) {
+  .portfolio_content {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+}
+
+@media screen and(max-width:700px) {
+  .portfolio_content {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+}
+
+@media screen and(max-width: 400px) {
+  .portfolio_content {
+    grid-template-columns: 1fr !important;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,126 @@
+.Experiance_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Experiance_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.Experiance_container .Fontend_experiance,
+.Experiance_container .Backend_experiance {
+  background: #2c2c6c;
+  padding: 2rem 5rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  -webkit-transition: all 3s ease;
+  transition: all 3s ease;
+}
+
+.Experiance_container .Fontend_experiance:hover,
+.Experiance_container .Backend_experiance:hover {
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background: transparent;
+  border: 1px solid #2c2c6c;
+}
+
+.Experiance_container .Fontend_experiance h3,
+.Experiance_container .Backend_experiance h3 {
+  color: #4db5ff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.Experiance_container .Fontend_experiance .experiance_contant,
+.Experiance_container .Backend_experiance .experiance_contant {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.Experiance_container .Fontend_experiance .experiance_contant .icon_size,
+.Experiance_container .Backend_experiance .experiance_contant .icon_size {
+  font-size: 1.6rem;
+  color: #3ec2e6;
+}
+
+.Experiance_container .Fontend_experiance .experiance_contant h4,
+.Experiance_container .Backend_experiance .experiance_contant h4 {
+  color: #4db5ff;
+  font-weight: 700;
+}
+
+.Experiance_container .Fontend_experiance .experiance_contant code,
+.Experiance_container .Backend_experiance .experiance_contant code {
+  color: aliceblue;
+}
+
+/*
+========================================================
+    Mrdia query medium device
+========================================================
+*/
+@media screen and (max-width: 1024px) {
+  .Experiance_container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+/*
+  ========================================================
+      Mrdia query small device
+  ========================================================
+  */
+@media screen and (max-width: 700px) {
+  .Experiance_container {
+    gap: 1rem;
+  }
+  .Experiance_container div {
+    width: 100%;
+    padding: 1rem 0rem;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Experiance_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=expirence.css.map */

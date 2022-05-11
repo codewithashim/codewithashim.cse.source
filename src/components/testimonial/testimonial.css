@@ -1,0 +1,80 @@
+.services_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.testimonial_container {
+  width: 40%;
+}
+
+.testimonial_container .testimonial {
+  background: #2c2c6c;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 2rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  margin: 0.6rem auto;
+  width: 60%;
+}
+
+.testimonial_container .testimonial .clint_profile {
+  width: 6rem;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  border: 0.4rem solid rgba(77, 181, 255, 0.4);
+  padding: 0.6rem;
+}
+
+.testimonial_container .testimonial .clint_profile img {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.testimonial_container .testimonial .clinte_revew_areia {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 300;
+  display: block;
+  width: 80%;
+  margin: 0.8rem auto 0;
+}
+
+/*
+========================================================
+    Mrdia query medium device
+========================================================
+*/
+@media screen and (max-width: 1024px) {
+  .testimonial_container {
+    width: 60%;
+  }
+}
+
+/*========================================================
+            Mrdia query small device
+========================================================*/
+@media screen and (max-width: 600px) {
+  .testimonial_container {
+    aspect-ratio: 1/1;
+    width: 90% !important;
+  }
+  .testimonial_container .clinte_revew_areia {
+    width: 90% !important;
+  }
+}
+/*# sourceMappingURL=testimonial.css.map */

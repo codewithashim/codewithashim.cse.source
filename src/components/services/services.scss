@@ -1,0 +1,113 @@
+@import "../../style/color";
+@import "../../style/variable";
+
+.services_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.services_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+
+  .service {
+    background: $bg-color-veriant;
+    //   padding: 3rem 2rem;
+    border-radius: 0rem 0rem 2rem 2rem;
+    border: 1px solid $primary-color;
+    height: fit-content;
+    transition: $transition;
+
+    &:hover {
+      background: transparent;
+      border: 1px solid $primary-color-veriant;
+    }
+
+    .service_heade {
+      background: $primary-color-veriant;
+      padding: 1.5rem;
+      text-align: center;
+      border-radius: 0 0 2rem 2rem;
+      box-shadow: 0 0 2rem 1rem rgba(0, 0, 0, 0.3);
+
+      h3 {
+        color: $bg-color;
+        font-weight: 600;
+      }
+    }
+
+    .service_list {
+      padding: 1.5rem 1rem;
+
+      li {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: 0.6rem;
+
+        p {
+          font-size: 0.9rem;
+        }
+
+        .service_list_icon {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+
+
+/*
+========================================================
+    Mrdia query medium device
+========================================================
+*/
+
+@media screen and(max-width: 1024px) {
+.services_container{
+    grid-template-columns: 1fr 1fr !important;
+    gap: 2rem !important;
+
+    .service{
+        height: auto;
+    }
+}
+  }
+  
+  /*
+    ========================================================
+        Mrdia query small device
+    ========================================================
+    */
+  
+  @media screen and(max-width:600px) {
+
+    // #service{
+    //     overflow: hidden !important;
+    //     width: 100% !important;
+    //     display: block !important;
+    //     margin: 0 auto !important;
+    // }
+
+      .services_container{
+        grid-template-columns: 1fr !important;
+      }
+  }
+  
+  @media screen and(max-width:700px) {
+
+  }
+  
+  @media screen and(max-width: 400px) {
+    .Experiance_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  

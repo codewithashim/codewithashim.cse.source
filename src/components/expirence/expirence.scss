@@ -1,0 +1,100 @@
+@import "../../style/variable";
+@import "../../style/color";
+
+.Experiance_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Experiance_container {
+  // width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+
+  .Fontend_experiance,
+  .Backend_experiance {
+    // width: max-content;
+    background: $bg-color-veriant;
+    padding: 2rem 5rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 3s ease;
+
+    &:hover {
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      background: transparent;
+      border: 1px solid $bg-color-veriant;
+    }
+
+    h3 {
+      color: $primary-color;
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .experiance_contant {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+
+      .icon_size {
+        font-size: 1.6rem;
+        color: #3ec2e6;
+      }
+
+      h4 {
+        color: $primary-color;
+        font-weight: 700;
+      }
+      code {
+        color: aliceblue;
+      }
+    }
+  }
+}
+
+/*
+========================================================
+    Mrdia query medium device
+========================================================
+*/
+
+@media screen and(max-width: 1024px) {
+  .Experiance_container {
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+/*
+  ========================================================
+      Mrdia query small device
+  ========================================================
+  */
+
+@media screen and(max-width:700px) {
+  .Experiance_container {
+    gap: 1rem;
+
+    div {
+      width: 100%;
+      padding: 1rem 0rem;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and(max-width: 400px) {
+  .Experiance_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*
+========================================================
+    Header Style
+========================================================
+*/
+#main_header {
+  width: 100%;
+  height: auto;
+}
+
+.header_title {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3.5rem;
+  cursor: pointer;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.Profile img {
+  width: 50%;
+  border-radius: 14rem 14rem 0 0;
+  background: -webkit-gradient(linear, left transparet, );
+  background: linear-gradient(to left transparet);
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.Profile img:hover {
+  border-top: 2px solid #4db5ff;
+  border-bottom: 2px solid #4db5ff;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+/*
+========================================================
+   Button Style
+========================================================
+*/
+.main_header_btn {
+  margin-top: 1rem;
+  gap: 1.2rem;
+}
+
+.main_header_btn a {
+  margin-right: 2rem;
+}
+
+/*
+========================================================
+   Button Style
+========================================================
+*/
+.header_social {
+  position: absolute;
+  top: 15rem;
+  bottom: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+.header_social a {
+  font-size: 1.5rem;
+}
+
+.header_social .soical_line {
+  height: 30px;
+  width: 4px;
+  margin-left: 0.5rem;
+  background: #7474f0;
+  cursor: pointer;
+}
+
+.scoroll_down {
+  position: absolute;
+  right: 5rem;
+  bottom: 10rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+/*
+========================================================
+    Mrdia query medium device
+========================================================
+*/
+@media screen and (max-width: 1024px) {
+  header {
+    width: 100%;
+  }
+  .scoroll_down {
+    right: 2rem;
+  }
+  .Profile img {
+    width: 50%;
+    border-radius: 0.5rem;
+    background: -webkit-gradient(linear, left transparet, );
+    background: linear-gradient(to left transparet);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .Profile img:hover {
+    border-top: 2px solid #4db5ff;
+    border-bottom: 2px solid #4db5ff;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+
+/*
+========================================================
+    Mrdia query small device
+========================================================
+*/
+@media screen and (max-width: 700px) {
+  #main_header {
+    width: 100%;
+    height: auto;
+  }
+  .header_social,
+  .scoroll_down {
+    display: none;
+  }
+  .header_title h1 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  .header_title h3 {
+    font-size: 1rem;
+  }
+  .Profile img {
+    width: 80%;
+    border-radius: 0.5rem;
+    background: -webkit-gradient(linear, left transparet, );
+    background: linear-gradient(to left transparet);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .Profile img:hover {
+    border-top: 2px solid #4db5ff;
+    border-bottom: 2px solid #4db5ff;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header {
+    width: 100%;
+  }
+  .header_title h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .header_title h3 {
+    font-size: 0.8rem;
+  }
+  .main_header_btn {
+    margin-top: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: -1rem;
+  }
+  .main_header_btn a {
+    margin-right: 1rem;
+  }
+  .Profile img {
+    width: 100%;
+    border-radius: 0.5rem;
+    background: -webkit-gradient(linear, left transparet, );
+    background: linear-gradient(to left transparet);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .Profile img:hover {
+    border-top: 2px solid #4db5ff;
+    border-bottom: 2px solid #4db5ff;
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+}
+
+@media screen and (max-width: 667px) {
+  #main_header {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 915px) {
+  #main_header {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 844px) {
+  #main_header {
+    height: auto;
+  }
+}
+/*# sourceMappingURL=header.css.map */

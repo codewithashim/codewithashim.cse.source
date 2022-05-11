@@ -1,0 +1,120 @@
+.services_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.services_container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+.services_container .service {
+  background: #2c2c6c;
+  border-radius: 0rem 0rem 2rem 2rem;
+  border: 1px solid #4db5ff;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-transition: all 0.6s ease-in-out;
+  transition: all 0.6s ease-in-out;
+}
+
+.services_container .service:hover {
+  background: transparent;
+  border: 1px solid rgba(77, 181, 255, 0.4);
+}
+
+.services_container .service .service_heade {
+  background: rgba(77, 181, 255, 0.4);
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 0 0 2rem 2rem;
+  -webkit-box-shadow: 0 0 2rem 1rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 2rem 1rem rgba(0, 0, 0, 0.3);
+}
+
+.services_container .service .service_heade h3 {
+  color: #1f1f38;
+  font-weight: 600;
+}
+
+.services_container .service .service_list {
+  padding: 1.5rem 1rem;
+}
+
+.services_container .service .service_list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.services_container .service .service_list li p {
+  font-size: 0.9rem;
+}
+
+.services_container .service .service_list li .service_list_icon {
+  color: #4db5ff;
+}
+
+/*
+========================================================
+    Mrdia query medium device
+========================================================
+*/
+@media screen and (max-width: 1024px) {
+  .services_container {
+    -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
+    gap: 2rem !important;
+  }
+  .services_container .service {
+    height: auto;
+  }
+}
+
+/*
+    ========================================================
+        Mrdia query small device
+    ========================================================
+    */
+@media screen and (max-width: 600px) {
+  .services_container {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Experiance_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=services.css.map */
